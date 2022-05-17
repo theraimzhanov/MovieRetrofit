@@ -17,9 +17,7 @@ public class MovieItem {
     @SerializedName("original_title")
     @Expose
     private String originalTitle;
-    @SerializedName("original_title_romanised")
-    @Expose
-    private String originalTitleRomanised;
+
     @SerializedName("image")
     @Expose
     private String image;
@@ -44,18 +42,7 @@ public class MovieItem {
     @SerializedName("rt_score")
     @Expose
     private String rtScore;
-    @SerializedName("people")
-    @Expose
-    private List<String> people = null;
-    @SerializedName("species")
-    @Expose
-    private List<String> species = null;
-    @SerializedName("locations")
-    @Expose
-    private List<String> locations = null;
-    @SerializedName("vehicles")
-    @Expose
-    private List<String> vehicles = null;
+
     @SerializedName("url")
     @Expose
     private String url;
@@ -84,13 +71,9 @@ public class MovieItem {
         this.originalTitle = originalTitle;
     }
 
-    public String getOriginalTitleRomanised() {
-        return originalTitleRomanised;
-    }
 
-    public void setOriginalTitleRomanised(String originalTitleRomanised) {
-        this.originalTitleRomanised = originalTitleRomanised;
-    }
+
+
 
     public String getImage() {
         return image;
@@ -154,38 +137,6 @@ public class MovieItem {
 
     public void setRtScore(String rtScore) {
         this.rtScore = rtScore;
-    }
-
-    public List<String> getPeople() {
-        return people;
-    }
-
-    public void setPeople(List<String> people) {
-        this.people = people;
-    }
-
-    public List<String> getSpecies() {
-        return species;
-    }
-
-    public void setSpecies(List<String> species) {
-        this.species = species;
-    }
-
-    public List<String> getLocations() {
-        return locations;
-    }
-
-    public void setLocations(List<String> locations) {
-        this.locations = locations;
-    }
-
-    public List<String> getVehicles() {
-        return vehicles;
-    }
-
-    public void setVehicles(List<String> vehicles) {
-        this.vehicles = vehicles;
     }
 
     public String getUrl() {

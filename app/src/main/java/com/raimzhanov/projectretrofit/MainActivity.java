@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         MovieRetrofitBuilder.getService().getAllMovies().enqueue(new Callback<List<MovieItem>>() {
             @Override
             public void onResponse(Call<List<MovieItem>> call, Response<List<MovieItem>> response) {
-                Log.d("TAG", "onResponse: " + response.body().size());
+
             }
 
             @Override
